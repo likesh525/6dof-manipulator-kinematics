@@ -226,10 +226,11 @@ def summarize(profile: TorqueProfile) -> np.ndarray:
 
 
 if __name__ == "__main__":
-    from src.trajectory import build_trajectory, verify_trajectory
+    from src.trajectory import build_trajectory, verify_trajectory, verify_velocity_feasibility
 
     traj = build_trajectory()
     verify_trajectory(traj)
+    verify_velocity_feasibility(traj)
 
     case1, case2 = compute_both_cases(traj)
 
