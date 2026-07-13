@@ -75,6 +75,7 @@ project/
 Use **Python 3.10–3.12**.
 
 ## 1. Create a virtual environment
+Use **Python 3.10–3.12** (tested on 3.10.11).
 
 ### Windows (PowerShell)
 
@@ -108,7 +109,7 @@ pip install -r requirements.txt
 
 ### Exact reproducibility (optional)
 
-`requirements.txt` lists direct dependencies; `requirements-lock.txt` pins every package (including transitive ones) to the exact versions this project was tested against. If `requirements.txt` doesn't reproduce the pipeline cleanly on your system, install from the lock file instead:
+`requirements.txt` lists direct dependencies; `requirements-lock.txt` pins every package (including transitive ones) to the exact versions this project was tested against, generated under Python 3.10.11. If `requirements.txt` doesn't reproduce the pipeline cleanly on your system, install from the lock file instead:
 
 ```bash
 pip install -r requirements-lock.txt
